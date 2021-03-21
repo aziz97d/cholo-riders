@@ -1,0 +1,68 @@
+.destination{
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    background-color: white;
+}
+.destination-search{
+    width: 25%;
+    background-color: rgb(219, 218, 218);
+    border-radius: 10px;
+    margin: 10px;
+    justify-content: start;
+    padding: 10px;
+}
+.destination-search label{
+    display: flex;
+    margin-left: 25px;
+}
+.destination-search .input-field{
+    width: 250px;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 10px 0;
+    border: none;
+}
+.destination-search .search-button{
+    width: 250px;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 10px 0;
+    border: none;
+    background-color: tomato;
+    color: white;
+}
+.destination-map{
+   width: 70%;
+   height: 100%;
+    background-color: green;
+}
+.travelSummary .pickInfo{
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: tomato;
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.travelSummary .pickInfo .pickInfoName{
+    display: flex;
+}
+.fareInfo{
+    
+}
+.fareInfoItem{
+    border-radius: 10px;
+    background-color: rgb(238, 241, 232);
+    margin: 5px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.fareInfoItem img{
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+}

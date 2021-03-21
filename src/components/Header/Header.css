@@ -1,0 +1,12 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation{
+    display: flex;
+}
+.navigation .navigation-item{
+    padding: 10px 15px;
+    text-decoration: none;
+}

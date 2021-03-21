@@ -1,0 +1,27 @@
+[
+    {
+        "id":"01",
+        "vehicleType" : "Bike",
+        "rentPerKilometer" : "30",
+        "image":"https://i.ibb.co/4gWwzyj/Frame.png"
+    },
+    {
+        "id":"02",
+        "vehicleType" : "Car",
+        "rentPerKilometer" : "50",
+        "image":"https://i.ibb.co/Fzy4TFD/Frame-2.png"
+        
+    },
+    {
+        "id":"03",
+        "vehicleType" : "Bus",
+        "rentPerKilometer" : "10",
+        "image":"https://i.ibb.co/myL3rRN/Frame-1.png"
+    },
+    {
+        "id":"04",
+        "vehicleType" : "Train",
+        "rentPerKilometer" : "20",
+        "image":"https://i.ibb.co/gDZ38w8/Group.png"
+    }
+]
