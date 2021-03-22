@@ -24,7 +24,10 @@
     border: none;
     outline: none;
 }
-
+.validation-message{
+    display: block;
+    color: red;
+}
 .login-form .submit-button {
     background: none;
     border: 1px solid black;

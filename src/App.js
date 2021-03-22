@@ -24,7 +24,7 @@ function App() {
       
       <Switch>
         <Route exact path="/">
-        <Home></Home>
+          <Home></Home>
         </Route>
         <PrivateRoute path="/destination/:vehicleId">
           <Destination></Destination>

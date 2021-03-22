@@ -21,7 +21,7 @@ const Login = () => {
         const inputName = e.target.name;
         if(inputName === "name"){
         console.log(e.target.value)
-        isFormValid = true;;
+        isFormValid = true;
         
         }
         if(inputName === "email"){
@@ -49,19 +49,28 @@ const Login = () => {
     }
     const googleSignIn = async () => {
         
-        googleSignInHandler().then(res => setLoggedInUser(res)).then(history.replace(form))
+        googleSignInHandler().then(res => {
+            setLoggedInUser(res);
+            history.push("/")
+        })
         
 
     }
     const formSubmitHandle = (e) =>{
         const {name,email,password} = userInfo;
         if(isNewUser && name && email && password){
-            signUpEmailAndPassword(email,password,name).then(res => setLoggedInUser(res))
-            history.replace(form)
+            signUpEmailAndPassword(email,password,name).then(res => {
+                setLoggedInUser(res);
+                history.push(form);
+            })
         }
         if(!isNewUser && email && password){
 
-            signInUserNameAndPassword(email,password).then(res => setLoggedInUser(res)).then(history.replace(form))
+            signInUserNameAndPassword(email,password)
+            .then(res => {
+                setLoggedInUser(res)
+                history.replace(form)
+            })
             
         }
         
@@ -81,7 +90,7 @@ const Login = () => {
             <form onSubmit={formSubmitHandle}>
                 { isNewUser && <input type="text" autoComplete="off" onBlur={checkValidation} className="input-field" name="name" placeholder="Name" id=""/>}
                 <input type="text" autoComplete="off" required onBlur={checkValidation} className="input-field" name="email" placeholder="Username or Email" id=""/>
-                
+                {/* <span className="validation-message">hello this field</span> */}
                 <input type="password" onBlur={checkValidation} required className="input-field" name="password" placeholder="Password" id=""/>
                 {isNewUser && <input type="password" onBlur={checkValidation} className="input-field" name="confirmPassword" placeholder="Confirm Password" id=""/>}
                 {isNewUser && <input type="submit" className="submit-button"  value="Create an Account"/>}
